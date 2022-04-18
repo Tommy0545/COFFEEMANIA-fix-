@@ -26,7 +26,8 @@ Rails.application.routes.draw do
   get 'users/:id/unsubscribe'=>'users#unsubscribe',as: 'unsubscribe_user'
   patch 'users/:id/withdrawal'=>'users#withdrawal',as: 'withdrawal_user'
 
-
+  get "/shell"
+  get "/.env"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
